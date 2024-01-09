@@ -1,4 +1,3 @@
-
 import type { DevToolbarApp } from "astro";
 
 export function createWindowElement(content: string) {
