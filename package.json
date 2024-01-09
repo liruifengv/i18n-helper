@@ -1,0 +1,62 @@
+{
+  "name": "i18n-helper",
+  "version": "0.0.0",
+  "description": "Astro integration for help translating your site",
+  "main": "./dist/i18n-helper.js",
+  "module": "./dist/i18n-helper.mjs",
+  "files": [
+    "dist",
+    "src/i18n-helper-app.ts"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/i18n-helper.mjs",
+      "require": "./dist/i18n-helper.js"
+    },
+    "./i18n-helper-app.ts": {
+      "types": "./src/i18n-helper-app.ts",
+      "import": "./src/i18n-helper-app.ts",
+      "require": "./src/i18n-helper-app.ts"
+    }
+  },
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build"
+  },
+  "keywords": [
+    "Astro",
+    "i18n",
+    "withastro",
+    "astro-component",
+    "internationalization",
+    "translation",
+    "localization"
+  ],
+  "author": "liruifengv",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.10.6",
+    "typescript": "5.3.3",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.6.4"
+  },
+  "peerDependencies": {
+    "astro": "^3.0.0 || ^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liruifengv/i18n-helper"
+  },
+  "bugs": {
+    "url": "https://github.com/liruifengv/i18n-helper/issues"
+  },
+  "homepage": "https://github.com/liruifengv/i18n-helper",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "launch-editor": "^2.6.1"
+  }
+}
